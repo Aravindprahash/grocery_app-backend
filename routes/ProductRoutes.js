@@ -2,52 +2,22 @@ const express = require("express");
 const router = express.Router();
 
 let products = [
-    // Existing 4 products
+    // ==================== FRUITS & VEGETABLES (20 products) ====================
     { 
         id: 1, 
         name: "Fresh Apple", 
         price: 120, 
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6",
+        image: "https://images.pexels.com/photos/1510392/pexels-photo-1510392.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh red apples from Kashmir"
     },
-    { 
-        id: 2, 
-        name: "Milk", 
-        price: 60, 
-        category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1563636619-e9143da7973b",
-        quantity: "1 liter",
-        description: "Fresh cow milk"
-    },
-    { 
-        id: 3, 
-        name: "Biscuits", 
-        price: 30, 
-        category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35",
-        quantity: "1 pack",
-        description: "Cream biscuits"
-    },
-    {
-        id: 4,
-        name: "Chicken",
-        price: 250,
-        category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
-        quantity: "1 kg",
-        description: "Fresh chicken"
-    },
-    
-    // 96 New Products
-    // Fruits & Vegetables (20 products)
     {
         id: 5,
         name: "Fresh Banana",
         price: 50,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224",
+        image: "https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 dozen",
         description: "Fresh ripe bananas"
     },
@@ -56,7 +26,7 @@ let products = [
         name: "Orange",
         price: 80,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1582979512210-99b6a53386f9",
+        image: "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Juicy nagpur oranges"
     },
@@ -65,7 +35,7 @@ let products = [
         name: "Pomegranate",
         price: 150,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1541344999736-83b0220b9388",
+        image: "https://images.pexels.com/photos/1120970/pexels-photo-1120970.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh red pomegranate"
     },
@@ -74,7 +44,7 @@ let products = [
         name: "Grapes",
         price: 90,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1537640538966-79f369143f8f",
+        image: "https://images.pexels.com/photos/60021/grapes-vineyard-grapevine-blue-60021.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Sweet green grapes"
     },
@@ -83,7 +53,7 @@ let products = [
         name: "Mango",
         price: 200,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1553279768-865429fa0078",
+        image: "https://images.pexels.com/photos/918643/pexels-photo-918643.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Alphonso mangoes"
     },
@@ -92,7 +62,7 @@ let products = [
         name: "Watermelon",
         price: 60,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1563114775-1c6e3aeb9af5",
+        image: "https://images.pexels.com/photos/1397539/pexels-photo-1397539.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Fresh watermelon"
     },
@@ -101,7 +71,7 @@ let products = [
         name: "Papaya",
         price: 45,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1617127360659-2743d0c1e5b2",
+        image: "https://images.pexels.com/photos/5945559/pexels-photo-5945559.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Ripe papaya"
     },
@@ -110,7 +80,7 @@ let products = [
         name: "Pineapple",
         price: 70,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1550258987-190a24941b8a",
+        image: "https://images.pexels.com/photos/947879/pexels-photo-947879.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Sweet pineapple"
     },
@@ -119,7 +89,7 @@ let products = [
         name: "Strawberry",
         price: 250,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2",
+        image: "https://images.pexels.com/photos/70746/strawberries-red-fruit-royalty-free-70746.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 g",
         description: "Fresh strawberries"
     },
@@ -128,7 +98,7 @@ let products = [
         name: "Kiwi",
         price: 180,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71",
+        image: "https://images.pexels.com/photos/1374882/pexels-photo-1374882.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "3 pieces",
         description: "Fresh kiwi fruit"
     },
@@ -137,7 +107,7 @@ let products = [
         name: "Potato",
         price: 40,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655",
+        image: "https://images.pexels.com/photos/144248/potatoes-vegetables-erdfrucht-bio-144248.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh potatoes"
     },
@@ -146,7 +116,7 @@ let products = [
         name: "Tomato",
         price: 35,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea",
+        image: "https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Ripe tomatoes"
     },
@@ -155,7 +125,7 @@ let products = [
         name: "Onion",
         price: 45,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1620574387735-362cdc75b56c",
+        image: "https://images.pexels.com/photos/4197447/pexels-photo-4197447.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh onions"
     },
@@ -164,7 +134,7 @@ let products = [
         name: "Carrot",
         price: 50,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37",
+        image: "https://images.pexels.com/photos/1306559/pexels-photo-1306559.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh carrots"
     },
@@ -173,7 +143,7 @@ let products = [
         name: "Cucumber",
         price: 30,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1604977042946-1eecc30f269e",
+        image: "https://images.pexels.com/photos/37528/cucumber-salad-food-healthy-37528.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Fresh cucumber"
     },
@@ -182,7 +152,7 @@ let products = [
         name: "Capsicum",
         price: 60,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83",
+        image: "https://images.pexels.com/photos/594137/pexels-photo-594137.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 g",
         description: "Green capsicum"
     },
@@ -191,7 +161,7 @@ let products = [
         name: "Cauliflower",
         price: 55,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1568584711075-59d8b1cd2195",
+        image: "https://images.pexels.com/photos/1516684/pexels-photo-1516684.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Fresh cauliflower"
     },
@@ -200,7 +170,7 @@ let products = [
         name: "Cabbage",
         price: 40,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f",
+        image: "https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Fresh cabbage"
     },
@@ -209,7 +179,7 @@ let products = [
         name: "Brinjal",
         price: 45,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1615484477774-ca22b5f6e576",
+        image: "https://images.pexels.com/photos/5677793/pexels-photo-5677793.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Fresh brinjal"
     },
@@ -218,18 +188,27 @@ let products = [
         name: "Spinach",
         price: 25,
         category: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb",
+        image: "https://images.pexels.com/photos/2325843/pexels-photo-2325843.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 bunch",
         description: "Fresh spinach leaves"
     },
 
-    // Oil & Dairy (15 products)
+    // ==================== OIL & DAIRY (15 products) ====================
+    { 
+        id: 2, 
+        name: "Milk", 
+        price: 60, 
+        category: "Oil & Dairy",
+        image: "https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?auto=compress&cs=tinysrgb&w=400",
+        quantity: "1 liter",
+        description: "Fresh cow milk"
+    },
     {
         id: 25,
         name: "Curd",
         price: 50,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1551024601-bec78ae704b3",
+        image: "https://images.pexels.com/photos/4397899/pexels-photo-4397899.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Fresh thick curd"
     },
@@ -238,7 +217,7 @@ let products = [
         name: "Butter",
         price: 55,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d",
+        image: "https://images.pexels.com/photos/531334/pexels-photo-531334.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "100 g",
         description: "Creamy butter"
     },
@@ -247,7 +226,7 @@ let products = [
         name: "Paneer",
         price: 100,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7",
+        image: "https://images.pexels.com/photos/6546434/pexels-photo-6546434.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Fresh cottage cheese"
     },
@@ -256,7 +235,7 @@ let products = [
         name: "Cheese",
         price: 120,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1552767059-ce182ead6c1b",
+        image: "https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Processed cheese"
     },
@@ -265,7 +244,7 @@ let products = [
         name: "Ghee",
         price: 450,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1627308595171-d1b5d67125ea",
+        image: "https://images.pexels.com/photos/5865037/pexels-photo-5865037.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Pure cow ghee"
     },
@@ -274,7 +253,7 @@ let products = [
         name: "Sunflower Oil",
         price: 150,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5",
+        image: "https://images.pexels.com/photos/33783/olive-oil-salad-dressing-cooking-olive.jpg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Refined sunflower oil"
     },
@@ -283,7 +262,7 @@ let products = [
         name: "Olive Oil",
         price: 350,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5",
+        image: "https://images.pexels.com/photos/1022385/pexels-photo-1022385.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 ml",
         description: "Extra virgin olive oil"
     },
@@ -292,7 +271,7 @@ let products = [
         name: "Coconut Oil",
         price: 140,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1627308595171-d1b5d67125ea",
+        image: "https://images.pexels.com/photos/725998/pexels-photo-725998.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 ml",
         description: "Pure coconut oil"
     },
@@ -301,7 +280,7 @@ let products = [
         name: "Mustard Oil",
         price: 130,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1627308595171-d1b5d67125ea",
+        image: "https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Kachi ghani mustard oil"
     },
@@ -310,7 +289,7 @@ let products = [
         name: "Groundnut Oil",
         price: 160,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1627308595171-d1b5d67125ea",
+        image: "https://images.pexels.com/photos/6941010/pexels-photo-6941010.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Pure groundnut oil"
     },
@@ -319,7 +298,7 @@ let products = [
         name: "Flavored Yogurt",
         price: 40,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1551024601-bec78ae704b3",
+        image: "https://images.pexels.com/photos/1435735/pexels-photo-1435735.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "100 ml",
         description: "Strawberry yogurt"
     },
@@ -328,7 +307,7 @@ let products = [
         name: "Buttermilk",
         price: 30,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1551024601-bec78ae704b3",
+        image: "https://images.pexels.com/photos/3735170/pexels-photo-3735170.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Spiced buttermilk"
     },
@@ -337,7 +316,7 @@ let products = [
         name: "Cream",
         price: 80,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d",
+        image: "https://images.pexels.com/photos/5765/food-healthy-meal-ice-cream.jpg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 ml",
         description: "Fresh cream"
     },
@@ -346,7 +325,7 @@ let products = [
         name: "Condensed Milk",
         price: 90,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1551024601-bec78ae704b3",
+        image: "https://images.pexels.com/photos/5765/food-healthy-meal-ice-cream.jpg?auto=compress&cs=tinysrgb&w=400",
         quantity: "400 g",
         description: "Sweetened condensed milk"
     },
@@ -355,18 +334,27 @@ let products = [
         name: "Milk Powder",
         price: 220,
         category: "Oil & Dairy",
-        image: "https://images.unsplash.com/photo-1551024601-bec78ae704b3",
+        image: "https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Full cream milk powder"
     },
 
-    // Snacks & Biscuits (20 products)
+    // ==================== SNACKS & BISCUITS (20 products) ====================
+    { 
+        id: 3, 
+        name: "Biscuits", 
+        price: 30, 
+        category: "Snacks & Biscuits",
+        image: "https://images.pexels.com/photos/890515/pexels-photo-890515.jpeg?auto=compress&cs=tinysrgb&w=400",
+        quantity: "1 pack",
+        description: "Cream biscuits"
+    },
     {
         id: 40,
         name: "Potato Chips",
         price: 30,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b",
+        image: "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "100 g",
         description: "Classic salted chips"
     },
@@ -375,7 +363,7 @@ let products = [
         name: "Cookies",
         price: 80,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35",
+        image: "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 g",
         description: "Chocolate chip cookies"
     },
@@ -384,7 +372,7 @@ let products = [
         name: "Namkeen",
         price: 60,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b",
+        image: "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Mixed namkeen"
     },
@@ -393,7 +381,7 @@ let products = [
         name: "Cake",
         price: 150,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+        image: "https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "400 g",
         description: "Vanilla cake"
     },
@@ -402,7 +390,7 @@ let products = [
         name: "Chocolate",
         price: 100,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52",
+        image: "https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "150 g",
         description: "Dark chocolate"
     },
@@ -411,7 +399,7 @@ let products = [
         name: "Popcorn",
         price: 40,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1578849278619-e73505b9610f",
+        image: "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=400",
         quantity: "100 g",
         description: "Butter popcorn"
     },
@@ -420,7 +408,7 @@ let products = [
         name: "Wafers",
         price: 30,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b",
+        image: "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "75 g",
         description: "Potato wafers"
     },
@@ -429,7 +417,7 @@ let products = [
         name: "Kurkure",
         price: 20,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b",
+        image: "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "90 g",
         description: "Masala munch"
     },
@@ -438,7 +426,7 @@ let products = [
         name: "Khakhra",
         price: 50,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35",
+        image: "https://images.pexels.com/photos/890515/pexels-photo-890515.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Plain khakhra"
     },
@@ -447,7 +435,7 @@ let products = [
         name: "Mathri",
         price: 45,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b",
+        image: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 g",
         description: "Ajwain mathri"
     },
@@ -456,7 +444,7 @@ let products = [
         name: "Samosa",
         price: 25,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+        image: "https://images.pexels.com/photos/6260921/pexels-photo-6260921.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "2 pieces",
         description: "Aloo samosa"
     },
@@ -465,7 +453,7 @@ let products = [
         name: "Pattice",
         price: 30,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+        image: "https://images.pexels.com/photos/1893556/pexels-photo-1893556.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "2 pieces",
         description: "Vegetable pattice"
     },
@@ -474,7 +462,7 @@ let products = [
         name: "Spring Roll",
         price: 80,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+        image: "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "4 pieces",
         description: "Veg spring roll"
     },
@@ -483,7 +471,7 @@ let products = [
         name: "French Fries",
         price: 90,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877",
+        image: "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Frozen french fries"
     },
@@ -492,7 +480,7 @@ let products = [
         name: "Nuggets",
         price: 120,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1562967914-608f82629710",
+        image: "https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 g",
         description: "Veg nuggets"
     },
@@ -501,7 +489,7 @@ let products = [
         name: "Brownie",
         price: 100,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c",
+        image: "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Chocolate brownie"
     },
@@ -510,7 +498,7 @@ let products = [
         name: "Donut",
         price: 60,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1551024601-bec78ae704b3",
+        image: "https://images.pexels.com/photos/1191639/pexels-photo-1191639.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Glazed donut"
     },
@@ -519,7 +507,7 @@ let products = [
         name: "Muffin",
         price: 50,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+        image: "https://images.pexels.com/photos/4040649/pexels-photo-4040649.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Blueberry muffin"
     },
@@ -528,7 +516,7 @@ let products = [
         name: "Pastry",
         price: 70,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+        image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 piece",
         description: "Pineapple pastry"
     },
@@ -537,18 +525,27 @@ let products = [
         name: "Rusk",
         price: 40,
         category: "Snacks & Biscuits",
-        image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35",
+        image: "https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 g",
         description: "Tea time rusk"
     },
 
-    // Meat & Fish (15 products)
+    // ==================== MEAT & FISH (15 products) ====================
+    {
+        id: 4,
+        name: "Chicken",
+        price: 250,
+        category: "Meat & Fish",
+        image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400",
+        quantity: "1 kg",
+        description: "Fresh chicken"
+    },
     {
         id: 60,
         name: "Fish - Rohu",
         price: 300,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/1148086/pexels-photo-1148086.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh rohu fish"
     },
@@ -557,7 +554,7 @@ let products = [
         name: "Prawns",
         price: 450,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/3296391/pexels-photo-3296391.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Medium size prawns"
     },
@@ -566,7 +563,7 @@ let products = [
         name: "Mutton",
         price: 650,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/618775/pexels-photo-618775.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh mutton"
     },
@@ -575,7 +572,7 @@ let products = [
         name: "Eggs",
         price: 80,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f",
+        image: "https://images.pexels.com/photos/162712/egg-white-food-protein-162712.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "6 pieces",
         description: "Farm fresh eggs"
     },
@@ -584,7 +581,7 @@ let products = [
         name: "Chicken Breast",
         price: 280,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Boneless chicken breast"
     },
@@ -593,7 +590,7 @@ let products = [
         name: "Fish - Pomfret",
         price: 550,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/8969237/pexels-photo-8969237.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh pomfret"
     },
@@ -602,7 +599,7 @@ let products = [
         name: "Crab",
         price: 400,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/3296279/pexels-photo-3296279.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Fresh crabs"
     },
@@ -611,7 +608,7 @@ let products = [
         name: "Squid",
         price: 350,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/3296394/pexels-photo-3296394.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Clean squid rings"
     },
@@ -620,7 +617,7 @@ let products = [
         name: "Mackerel",
         price: 200,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/1148086/pexels-photo-1148086.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh mackerel"
     },
@@ -629,7 +626,7 @@ let products = [
         name: "Sardine",
         price: 150,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/8969195/pexels-photo-8969195.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fresh sardines"
     },
@@ -638,7 +635,7 @@ let products = [
         name: "Chicken Leg Piece",
         price: 270,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Curry cut chicken legs"
     },
@@ -647,7 +644,7 @@ let products = [
         name: "Fish Fillet",
         price: 320,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/3655916/pexels-photo-3655916.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Boneless fish fillet"
     },
@@ -656,7 +653,7 @@ let products = [
         name: "Mutton Chops",
         price: 680,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/8308126/pexels-photo-8308126.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Mutton chops with bone"
     },
@@ -665,7 +662,7 @@ let products = [
         name: "Chicken Sausages",
         price: 150,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Chicken frankfurters"
     },
@@ -674,18 +671,18 @@ let products = [
         name: "Keema",
         price: 280,
         category: "Meat & Fish",
-        image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781",
+        image: "https://images.pexels.com/photos/6210875/pexels-photo-6210875.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Minced chicken/mutton"
     },
 
-    // Beverages (15 products)
+    // ==================== BEVERAGES (15 products) ====================
     {
         id: 75,
         name: "Coca Cola",
         price: 45,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1554866585-cd94860890b7",
+        image: "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "750 ml",
         description: "Soft drink"
     },
@@ -694,7 +691,7 @@ let products = [
         name: "Pepsi",
         price: 45,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1554866585-cd94860890b7",
+        image: "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "750 ml",
         description: "Soft drink"
     },
@@ -703,7 +700,7 @@ let products = [
         name: "Orange Juice",
         price: 80,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba",
+        image: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Tetra pack orange juice"
     },
@@ -712,7 +709,7 @@ let products = [
         name: "Tea Powder",
         price: 150,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1564892412-173262db6489",
+        image: "https://images.pexels.com/photos/1697945/pexels-photo-1697945.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 g",
         description: "Premium tea leaves"
     },
@@ -721,7 +718,7 @@ let products = [
         name: "Coffee Powder",
         price: 200,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1442512595331-e89e73853f31",
+        image: "https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 g",
         description: "Filter coffee powder"
     },
@@ -730,7 +727,7 @@ let products = [
         name: "Mineral Water",
         price: 20,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d",
+        image: "https://images.pexels.com/photos/327090/pexels-photo-327090.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Packaged drinking water"
     },
@@ -739,7 +736,7 @@ let products = [
         name: "Apple Juice",
         price: 85,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba",
+        image: "https://images.pexels.com/photos/1346347/pexels-photo-1346347.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Apple juice"
     },
@@ -748,7 +745,7 @@ let products = [
         name: "Lemon Juice",
         price: 70,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba",
+        image: "https://images.pexels.com/photos/2109099/pexels-photo-2109099.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 liter",
         description: "Lemon drink"
     },
@@ -757,7 +754,7 @@ let products = [
         name: "Cold Coffee",
         price: 60,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e",
+        image: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 ml",
         description: "Ready to drink coffee"
     },
@@ -766,7 +763,7 @@ let products = [
         name: "Milk Shake",
         price: 70,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e",
+        image: "https://images.pexels.com/photos/3727250/pexels-photo-3727250.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 ml",
         description: "Chocolate milkshake"
     },
@@ -775,7 +772,7 @@ let products = [
         name: "Sports Drink",
         price: 40,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1554866585-cd94860890b7",
+        image: "https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 ml",
         description: "Electrolyte drink"
     },
@@ -784,7 +781,7 @@ let products = [
         name: "Energy Drink",
         price: 100,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1554866585-cd94860890b7",
+        image: "https://images.pexels.com/photos/2531184/pexels-photo-2531184.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "250 ml",
         description: "Energy boost"
     },
@@ -793,7 +790,7 @@ let products = [
         name: "Green Tea",
         price: 180,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1564892412-173262db6489",
+        image: "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "100 g",
         description: "Green tea leaves"
     },
@@ -802,7 +799,7 @@ let products = [
         name: "Lemon Honey",
         price: 120,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba",
+        image: "https://images.pexels.com/photos/2109099/pexels-photo-2109099.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 ml",
         description: "Lemon honey drink"
     },
@@ -811,18 +808,18 @@ let products = [
         name: "Coconut Water",
         price: 50,
         category: "Beverages",
-        image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d",
+        image: "https://images.pexels.com/photos/3625372/pexels-photo-3625372.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "500 ml",
         description: "Tender coconut water"
     },
 
-    // Groceries & Staples (11 products to complete 100 total)
+    // ==================== GROCERIES & STAPLES (10 products) ====================
     {
         id: 90,
         name: "Rice - Basmati",
         price: 120,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Premium basmati rice"
     },
@@ -831,7 +828,7 @@ let products = [
         name: "Wheat Flour",
         price: 50,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Whole wheat flour"
     },
@@ -840,7 +837,7 @@ let products = [
         name: "Toor Dal",
         price: 110,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/4198936/pexels-photo-4198936.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Arhar dal"
     },
@@ -849,7 +846,7 @@ let products = [
         name: "Moong Dal",
         price: 90,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/4198927/pexels-photo-4198927.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Split yellow moong"
     },
@@ -858,7 +855,7 @@ let products = [
         name: "Chana Dal",
         price: 80,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/4198940/pexels-photo-4198940.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Bengal gram dal"
     },
@@ -867,7 +864,7 @@ let products = [
         name: "Sugar",
         price: 45,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/65882/sugar-sweet-white-crystals-65882.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Fine sugar"
     },
@@ -876,7 +873,7 @@ let products = [
         name: "Salt",
         price: 20,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/4110252/pexels-photo-4110252.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "1 kg",
         description: "Iodized salt"
     },
@@ -885,7 +882,7 @@ let products = [
         name: "Turmeric Powder",
         price: 40,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/4198647/pexels-photo-4198647.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Pure turmeric"
     },
@@ -894,7 +891,7 @@ let products = [
         name: "Chilli Powder",
         price: 50,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Red chilli powder"
     },
@@ -903,7 +900,7 @@ let products = [
         name: "Coriander Powder",
         price: 35,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "200 g",
         description: "Dhania powder"
     },
@@ -912,7 +909,7 @@ let products = [
         name: "Garam Masala",
         price: 60,
         category: "Groceries & Staples",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/6941010/pexels-photo-6941010.jpeg?auto=compress&cs=tinysrgb&w=400",
         quantity: "100 g",
         description: "Whole garam masala"
     }
